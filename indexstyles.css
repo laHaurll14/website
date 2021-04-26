@@ -1,0 +1,35 @@
+body {
+  background-image: url("IMG-0154.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+img {
+  width: 80%;
+  padding: 10%;
+  transition: transform 1s;
+  margin: 0 auto;
+}
+
+img:hover {
+  transform: scale(1.75);
+}
+
+/*
+@keyframes spinning {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+.spinningg:hover {
+  animation-name: spinning;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+/*animation-timing-function: linear;
+}
+*/
+
+/*# sourceMappingURL=indexstyles.css.map */
