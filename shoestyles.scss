@@ -4,18 +4,24 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 6%;
+  padding-top: 1%;
   padding-bottom: 6%;
+}
+#yee {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 img {
     width:100%;
-    padding: 10%;
+    padding: 5%;
     transition: transform 1s;
     margin: 0 auto;
 }
 
 img:hover {
-  transform: scale(1.75);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=shoestyles.scss.map */

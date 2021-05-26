@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Coming Soon</title>
+        <title>Lauren's Playlist</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link href="comingsoonstyles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-      <img src="comingsoon.PNG" class="spinningg"></>
+      <img id="yert" src="playlist/06ACFE73-7983-46D9-9E31-E25584AA8972.PNG" class="spinningg"></>
+      <!--
+      <div class="container">
+
+        <div class="row"> -->
+        <ul id="list" style="list-style: none;">
+          <li>
+            <img data-value="audio/caves.mp3" src="playlist/EE4D5731-2FA6-4910-A90C-A9CA658B86A9.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/gloria.mp3" src="playlist/BAEA8B9A-8599-4BCA-8F05-6CE73BDFBF78.PNG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/star.mp3" src="playlist/1438AD8D-0DA7-4F02-95D1-255A10CE6A8C.PNG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/surfcurse.mp3" src="playlist/E8F4E3CA-0527-43D0-BEA6-24BEAFB3003A.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/somebodytolove.mp3" src="playlist/269D534F-887C-4D33-9DF3-9283B5594952.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/lover.mp3" src="playlist/58CB0E91-0323-46FC-A5C1-6D3B91819C1A.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/fireandtheflood.mp3" src="playlist/619603A1-CE55-49D6-AB02-3B12B818249B.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/apocalypse.mp3" src="playlist/2AF14ED0-D0F3-4C20-8704-6B890D131966.JPEG" class="spinningg"></>
+        </li>
+          <li>
+            <img data-value="audio/thismustbetheplace.mp3" src="playlist/E5527C6B-00AB-47BA-A43B-28EAD70FDE23.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/sounds.mp3" src="playlist/0B95F6F8-FB46-4470-AADD-36A07CA395F4.JPEG" class="spinningg"></>
+          </li>
+          <li>
+            <img data-value="audio/sleeponthefloor.mp3" src="playlist/A759B200-9C47-4113-938D-EB6D31C9F417.JPEG" class="spinningg"></>
+          </li>
+          </ul>
+          <audio id="audio" controls="controls" hidden="true">
+              <source id="audioSource" src=""></source>
+              Your browser does not support the audio format.
+          </audio>
+          <!--
+        </div>
+
+      </div> -->
+      <script>
+      var yee = false; //is false, audio is off
+      list.onclick = function(e) {
+        e.preventDefault();
+
+        var elm = e.target;
+        var audio = document.getElementById('audio');
+
+        var source = document.getElementById('audioSource');
+        source.src = elm.getAttribute('data-value');
+        audio.load();
+        if (yee == false) {
+          audio.play();
+          yee = true;
+        }
+        else {
+          audio.pause();
+          yee = false;
+        }
+      };
+      </script>
     </body>
 <html>

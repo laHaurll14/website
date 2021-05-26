@@ -1,10 +1,14 @@
 body {
-  background-image: url("backgroundimages/IMG-8469.jpg");
+  background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding-top: 6%;
+  padding-top: 4%;
   padding-bottom: 6%;
+}
+
+#yert {
+  width: 60%;
 }
 
 img {

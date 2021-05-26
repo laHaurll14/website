@@ -7,14 +7,14 @@ body {
   padding-bottom: 6%;
 }
 img {
-    width:80%;
-    padding: 10%;
+    width:100%;
+    padding: 7%;
     transition: transform 1s;
     margin: 0 auto;
 }
 
 img:hover {
-  transform: scale(1.75);
+  transform: scale(1.2);
 }
 /*
 @keyframes spinning {
